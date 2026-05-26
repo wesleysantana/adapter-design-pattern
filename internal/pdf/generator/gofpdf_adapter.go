@@ -12,7 +12,7 @@ type GofpdfAdapter struct {
 	rootPath string
 }
 
-func New(rootPath string) PDFGeneratorInterface {
+func New(rootPath string) PDFGeneratorTarget {
 	return &GofpdfAdapter{rootPath: rootPath}
 }
 
